@@ -1,3 +1,54 @@
+Changes in the "2012-02" release (2010-01-10 thru 2012-02-09):
+
+* aggregate
+  * avoid locale-specific errors due to differences in LC_NUMERIC
+    conventions.
+
+* buffer
+  * Update buffer to build based on args.tab.
+
+* cutfield
+  * Fix a segfault when bad field labels are specified.
+  * Fix a couple of compiler warnings.
+
+* dbstream
+  * Improve consistency in handling of various query types.
+    * Allow placeholders in SELECT queries
+    * Do not require placeholders in UPDATE queries
+    * Do not require placeholders in INSERT queries
+    * Support DELETE queries, etc.
+
+* fieldsplit
+  * Adjust bucket length calculation.
+
+* funiq
+  * Fix a bug in which caused a segfault when taking 0-byte input streams.
+
+* mergekeys
+  * Remove arbitrary field length limit.
+  * Fix segfalut when reading empty key fields.
+
+* reorder
+  * Replace a fixed-size buffer with a dynamically-sized one.  This fixes
+    a bug in which long fields were silently truncated when using the -f
+    option.
+
+* translate_field:
+  * Add an option to keep the header row intact.
+
+* Misc:
+  * libcrush
+    * fix a few (mostly harmless) compiler warnings.
+    * Make tests behave better when PCRE is not present.
+    * Add a (primitive) library for dynamically-resized strings.
+    * bug fixes in bstree and hashtbl.
+    * Fix bstree node removal
+    * Add logic for hashtbl.c to grow/rehash on insertion.
+    * Add a new function copy_field() to ffutils which dynamically
+      reallocates the target buffer.
+  * cgener: Allow nicely formatted usage_extra blocks in args.tab.
+
+
 Changes in the "2010-01" release (2009-01-13 thru 2010-01-10):
 
 * aggregate
