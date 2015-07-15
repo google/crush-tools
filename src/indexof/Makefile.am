@@ -6,7 +6,7 @@ $(BUILT_SOURCES) : args.tab
 bin_PROGRAMS = indexof
 indexof_SOURCES = indexof.c indexof.h $(BUILT_SOURCES)
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)

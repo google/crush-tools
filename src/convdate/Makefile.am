@@ -7,7 +7,7 @@ bin_PROGRAMS = convdate
 convdate_SOURCES = convdate.c convdate.h $(BUILT_SOURCES)
 convdate_LDADD = ../libcrush/libcrush.la
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)

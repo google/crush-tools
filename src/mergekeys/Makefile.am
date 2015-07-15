@@ -7,7 +7,7 @@ bin_PROGRAMS = mergekeys
 mergekeys_SOURCES = mergekeys.c mergekeys.h $(BUILT_SOURCES)
 mergekeys_LDADD = ../libcrush/libcrush.la
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)

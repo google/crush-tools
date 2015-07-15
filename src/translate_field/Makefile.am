@@ -15,5 +15,5 @@ man1_MANS = translate_field.1
 translate_field.1 : args.tab
 	../bin/genman.pl args.tab > $@
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf

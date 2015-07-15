@@ -7,7 +7,7 @@ bin_PROGRAMS = reorder
 reorder_SOURCES = reorder.c reorder.h $(BUILT_SOURCES)
 reorder_LDADD = ../libcrush/libcrush.la
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)

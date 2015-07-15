@@ -6,7 +6,7 @@ BUILT_SOURCES = main.c usage.c grepfield_main.h
 bin_PROGRAMS = grepfield
 grepfield_SOURCES = grepfield.c grepfield.h $(BUILT_SOURCES)
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 grepfield_LDADD = ../libcrush/libcrush.la

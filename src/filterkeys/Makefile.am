@@ -6,7 +6,7 @@ BUILT_SOURCES = main.c usage.c filterkeys_main.h
 bin_PROGRAMS = filterkeys
 filterkeys_SOURCES = filterkeys.c filterkeys.h $(BUILT_SOURCES)
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 filterkeys_LDADD = ../libcrush/libcrush.la
