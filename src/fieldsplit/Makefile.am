@@ -8,7 +8,7 @@ fieldsplit_SOURCES = fieldsplit.c $(BUILT_SOURCES)
 
 fieldsplit_LDADD = ../libcrush/libcrush.la
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)
@@ -16,7 +16,7 @@ CLEANFILES = $(BUILT_SOURCES)
 EXTRA_DIST = args.tab test.conf \
              test/test_001.sh test/001-transform-key.txt test/002-data.txt \
              test/001/2008-01.expected test/001/2008-02.expected \
-             test/test_002.sh test/002 \
+             test/test_002.sh \
              test/test_003.sh test/003/2008-01-29.expected \
              test/003/2008-02-01.expected \
              test/003/2008-02-09.expected \

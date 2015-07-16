@@ -1,7 +1,7 @@
 #!/bin/bash
 
 has_error=0
-ls . | grep -v test.sh > logfile.tmp
+(ls . | grep -v test.sh; echo -e "test.sh.log\ntest.sh.trs") > logfile.tmp
 echo logfile.tmp >> logfile.tmp
 
 f=`./find_not_processed -l logfile.tmp -d . -g '*'`

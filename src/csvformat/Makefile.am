@@ -10,7 +10,7 @@ csvformat: csvformat.in Makefile
 				-I$(srcdir)/../perllib hackery.m4 $< crush_version.pl > $@
 	chmod +x $@
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 man1_MANS = csvformat.1

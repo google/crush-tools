@@ -7,7 +7,7 @@ bin_PROGRAMS = pivot
 pivot_SOURCES = pivot.c $(BUILT_SOURCES)
 pivot_LDADD = ../libcrush/libcrush.la
 
-TESTS_ENVIRONMENT = $(top_srcdir)/src/bin/testharness.sh
+LOG_COMPILER = $(top_srcdir)/src/bin/testharness.sh
 TESTS = test.conf
 
 CLEANFILES = $(BUILT_SOURCES)
